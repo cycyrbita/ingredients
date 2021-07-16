@@ -237,10 +237,8 @@ body {
     flex: 0 0 auto;
     width: 280px;
     background-color: #fff;
-    margin-top: 10px;
     border-radius: 5px;
     margin-left: 10px;
-    overflow: auto;
 }
 
 @media (max-width: 1920px) {
@@ -287,7 +285,12 @@ body {
         bottom: 10px;
         transform: translateX(100%);
         margin: 0;
-        overflow: auto;
+        transition: 0.3s ease-in-out transform;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+
+        &.active {
+            transform: translateX(0);
+        }
     }
 
     .ingredients__card {
@@ -307,6 +310,11 @@ body {
         .ingredients__name {
             font-size: 18px;
         }
+    }
+
+    .ingredients__content {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 

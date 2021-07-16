@@ -6,7 +6,7 @@ $(document).ready(function() {
         nav: true
     });
 
-    $('.ingredients__btn').click(function() {
+    $('.ingredients__btn_rotate').click(function() {
         $(this).parents('.ingredients__info').toggleClass('active');
     });
 

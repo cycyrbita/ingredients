@@ -5,7 +5,6 @@
 <body class="page">
     <div class="ingredients">
         <div class="ingredients__body">
-            <div class="ingredients__header"></div>
             <div class="ingredients__content">
                 <div class="ingredients__card">
                     <div class="ingredients__info">
@@ -261,7 +260,37 @@
                 </div>
             </div>
         </div>
-        <div class="ingredients__sidebar sidebar"></div>
+        <div class="ingredients__sidebar sidebar">
+            <div class="sidebar__title">Фильтруй базар</div>
+            <form class="sidebar__form">
+                <div class="sidebar__item">
+                    <label>
+                        <p>Поиск</p>
+                        <input type="text" class="sidebar__field" name="search">
+                    </label>
+                </div>
+                <div class="sidebar__item">
+                    <label>
+                        <p>Выбери тему</p>
+                        <select name="tema">
+                            <option value="Диабет">Диабет</option>
+                            <option value="Гипертония">Гипертония</option>
+                            <option value="Омоложение">Омоложение</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="sidebar__item">
+                    <label>
+                        <p>Выбери язык</p>
+                        <select name="language">
+                            <option value="Диабет">Русский</option>
+                            <option value="Гипертония">Английский</option>
+                            <option value="Омоложение">Испанский</option>
+                        </select>
+                    </label>
+                </div>
+            </form>
+        </div>
     </div>
     <%- include('block/script') %>
 </body>

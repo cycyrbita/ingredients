@@ -37,4 +37,6 @@ $(document).ready(function() {
 
     cutLongText('.ingredients__front .ingredients__description p', 90, 90);
     cutLongText('.ingredients__front .ingredients__name', 36, 36);
+
+    $('input, select').styler();
 });

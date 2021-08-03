@@ -4,11 +4,11 @@ $(document).ready(function() {
         {
             "id": "1",
             "id_group": "1",
-            "name": "Картофель",
-            "description": "Карто́фель, или Паслён клубнено́сный (лат. Solánum tuberósum), — вид многолетних клубненосных травянистых растений из рода Паслён (Solanum) семейства",
-            "img": "../media/card1.jpg?, ../media/card2.jpg?, ../media/card3.jpg?,",
-            "language": "Русский",
-            "tags": "Еда, Здоровье, Похудение"
+            "name": "",
+            "description": "",
+            "img": "",
+            "language": "",
+            "tags": ""
         },
         {
             "id": "2",
@@ -16,7 +16,7 @@ $(document).ready(function() {
             "name": "Potato",
             "description": "Potatoes, or Tuberous nightshade (Latin Solánum tuberósum), is a species of perennial tuberous herbaceous plants from the genus Solanum family",
             "img": "../media/card1.jpg?, ../media/card2.jpg?, ../media/card3.jpg?,",
-            "language": "Английский",
+            "language": "",
             "tags": "Еда, Здоровье, Похудение"
         },
         {

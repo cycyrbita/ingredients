@@ -756,3 +756,21 @@
         outline: none;
     }
 }
+
+@media (max-width: 1310px) {
+    .card {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 980px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}

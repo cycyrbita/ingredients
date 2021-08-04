@@ -191,6 +191,7 @@ $(document).ready(function() {
                                 </div>
                                 <div class="card__tema">
                                     <div class="card__tema-add">
+                                        <p>Такая тема уже существует</p>
                                         <input type="text" placeholder="Добавить тему">
                                         <div>Добавить</div>
                                     </div>

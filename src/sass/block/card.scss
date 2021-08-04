@@ -41,6 +41,10 @@
             }
         }
 
+        .card__tema {
+            margin-bottom: 15px;
+        }
+
         .card__media-remove {
             position: absolute;
             z-index: 10;
@@ -355,9 +359,7 @@
 }
 
 .card__language {
-    & + .card__tags {
-        margin-top: 5px;
-    }
+    margin-bottom: 5px;
 }
 
 .card__language-body {
@@ -430,7 +432,7 @@
 }
 
 .card__tema {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .card__tema-body {
@@ -664,6 +666,23 @@
 .card__tema-add {
     position: relative;
     margin-bottom: 2px;
+
+    p {
+        display: none;
+    }
+
+    &.error {
+        p {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 12px;
+            color: red;
+        }
+
+        input {
+            border-color: red;
+        }
+    }
 
     input {
         width: 100%;

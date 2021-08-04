@@ -15,7 +15,7 @@ $(document).ready(function() {
             "id": "2",
             "id_group": "1",
             "name": "Potato",
-            "description": "Potatoes, or Tuberous nightshade (Latin Solánum tuberósum), is a species of perennial tuberous herbaceous plants from the genus Solanum family",
+            "description": "Potatoes, or Tuberous nightshade (Latin Solánum tuberósum), is a species of perennial tuberous herbaceous plants from the genus Solanum family Potatoes, or Tuberous nightshade (Latin Solánum tuberósum), is a species of perennial tuberous herbaceous plants from the genus Solanum family Potatoes, or Tuberous nightshade (Latin Solánum tuberósum), is a species of perennial tuberous herbaceous plants from the genus Solanum family",
             "img": "../media/card1.jpg?, ../media/card2.jpg?, ../media/card3.jpg?,",
             "language": "",
             "tags": "Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение",

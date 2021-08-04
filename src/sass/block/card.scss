@@ -604,6 +604,15 @@
         overflow : auto;
         min-height: 100px;
         font-size: 13px;
+
+        &::-webkit-scrollbar {
+            width: 7px;
+            background-color: #e2e2e2;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #223c50;
+        }
     }
 }
 

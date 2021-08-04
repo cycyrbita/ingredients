@@ -429,15 +429,100 @@
     }
 }
 
+.card__tema {
+    margin-bottom: 15px;
+}
+
+.card__tema-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: -2px;
+
+    span {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 3px 7px 3px 7px;
+        font-size: 11px;
+        color: #fff;
+        background-color: #ff55f5;
+        margin: 2px;
+        border-radius: 25px;
+        cursor: pointer;
+        line-height: 13px;
+        opacity: 0.8;
+        user-select: none;
+
+        mark {
+            position: relative;
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            background-color: #a53d9e;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 3px;
+            margin-right: -3px;
+
+            &::before {
+                position: absolute;
+                top: 6px;
+                left: 3px;
+                right: 3px;
+                height: 1px;
+                background-color: #fff;
+                content: '';
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                position: absolute;
+                top: 6px;
+                left: 3px;
+                right: 3px;
+                height: 1px;
+                background-color: #fff;
+                content: '';
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                background-color: #bd3c3c;
+            }
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
 .card__media-add {
     display: none;
 }
 
 .card__tags-item {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-right: -2px;
     margin-left: -2px;
+    max-height: 70px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 7px;
+        background-color: #e2e2e2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #223c50;
+    }
 
     span {
         position: relative;
@@ -540,6 +625,45 @@
             border-color: red;
         }
     }
+
+    input {
+        width: 100%;
+        padding: 2px 5px;
+        font-size: 14px;
+        border: 1px solid #eaeaea;
+        line-height: 21px;
+        color: #777777;
+
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+
+    div {
+        position: absolute;
+        height: 23px;
+        right: 2px;
+        bottom: 2px;
+        background-color: #ececec;
+        font-size: 12px;
+        padding: 5px 10px;
+        cursor: pointer;
+        opacity: 0.7;
+        user-select: none;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:active {
+            transform: scale(.96);
+        }
+    }
+}
+
+.card__tema-add {
+    position: relative;
+    margin-bottom: 2px;
 
     input {
         width: 100%;

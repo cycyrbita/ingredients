@@ -8,7 +8,8 @@ $(document).ready(function() {
             "description": "",
             "img": "",
             "language": "",
-            "tags": ""
+            "tags": "",
+            "tema": "Похудение&&Здоровье&&"
         },
         {
             "id": "2",
@@ -17,7 +18,8 @@ $(document).ready(function() {
             "description": "Potatoes, or Tuberous nightshade (Latin Solánum tuberósum), is a species of perennial tuberous herbaceous plants from the genus Solanum family",
             "img": "../media/card1.jpg?, ../media/card2.jpg?, ../media/card3.jpg?,",
             "language": "",
-            "tags": "Еда, Здоровье, Похудение"
+            "tags": "Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение, Еда, Здоровье, Похудение",
+            "tema": "Похудение&&Здоровье&&"
         },
         {
             "id": "3",
@@ -26,7 +28,8 @@ $(document).ready(function() {
             "description": "Помидор, или Паслён клубнено́сный (лат. Solánum tuberósum), — вид многолетних клубненосных травянистых растений из рода Паслён (Solanum) семейства",
             "img": "../media/card1.jpg?, ../media/card2.jpg?, ../media/card3.jpg?,",
             "language": "Русский",
-            "tags": "Еда, Похудение"
+            "tags": "Еда, Похудение",
+            "tema": "Похудение&&Здоровье&&"
         }
     ]
 
@@ -118,6 +121,8 @@ $(document).ready(function() {
                 language = '',
                 arrayImg = arrayCards[i]['img'].split('?, '),
                 img = '',
+                arrayTema = arrayCards[i]['tema'].split('&&'),
+                tema = '',
                 arrayTags = arrayCards[i]['tags'].split(' '),
                 tags = '';
 
@@ -139,6 +144,10 @@ $(document).ready(function() {
                 tags += `<span>${arrayTags[i].split(',').join('')}<mark></mark></span>`;
             })
 
+            $.each(arrayTema, function(i) {
+                tema += `<span>${arrayTema[i] + " "}<mark></mark></span>`;
+            })
+
             card += `
                 <div class="card" data-id="${id}" data-id_group="${id_group}">
                     <div class="card__wrap">
@@ -154,6 +163,11 @@ $(document).ready(function() {
                         <div class="card__body card__body_face">
                             <div class="card__name"><p>${name}</p> <span></span></div>
                             <div class="card__description"><p>${description}</p> <span></span></div>
+                            <div class="card__tema">
+                                <div class="card__tema-body">
+                                    ${tema}
+                                </div>
+                            </div>
                             <div class="card__language">
                                 <div class="card__language-body">
                                     ${language}
@@ -174,6 +188,15 @@ $(document).ready(function() {
                                 <div class="card__field">
                                     <p>Описание</p>
                                     <textarea name="card_description">${description}</textarea>
+                                </div>
+                                <div class="card__tema">
+                                    <div class="card__tema-add">
+                                        <input type="text" placeholder="Добавить тему">
+                                        <div>Добавить</div>
+                                    </div>
+                                    <div class="card__tema-body">
+                                        ${tema}
+                                    </div>
                                 </div>
                                 <div class="card__language">
                                     <p>Изменяемый язык</p>

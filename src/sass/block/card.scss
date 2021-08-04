@@ -24,6 +24,10 @@
             .card__tags-item span mark {
                 display: inline-block;
             }
+
+            .card__tema-body span mark {
+                display: inline-block;
+            }
         }
 
         .card__body_face {
@@ -458,7 +462,7 @@
 
         mark {
             position: relative;
-            display: inline-block;
+            display: none;
             height: 13px;
             width: 13px;
             background-color: #a53d9e;

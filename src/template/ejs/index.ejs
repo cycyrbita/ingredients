@@ -5,6 +5,44 @@
 <body>
     <div class="container-fluid">
         <div class="ingredients">
+            <div class="ingredients__body"></div>
+            <div class="ingredients__aside">
+                <div class="ingredients__aside-close"></div>
+                <div class="ingredients__aside-box">
+                    <div class="ingredients__aside-title">Фильтруем как хотим</div>
+                    <label class="ingredients__aside-item">
+                        <p>Поиск по тексту</p>
+                        <input class="ingredients__aside-field" type="text" placeholder="Поиск">
+                    </label>
+                    <label class="ingredients__aside-item">
+                        <p>Какая тема?</p>
+                        <select class="ingredients__aside-field ingredients__aside-select">
+                            <option value="Все">Все</option>
+                            <option value="Тема">Тема</option>
+                        </select>
+                    </label>
+                    <label class="ingredients__aside-item">
+                        <p>Какой язык?</p>
+                        <select class="ingredients__aside-field ingredients__aside-select">
+                            <option value="Все">Все</option>
+                            <option value="Язык">Язык</option>
+                        </select>
+                    </label>
+                    <label class="ingredients__aside-item">
+                        <p>Меточки</p>
+                        <select class="ingredients__aside-field ingredients__aside-select">
+                            <option value="Все">Все</option>
+                            <option value="Метки">Метки</option>
+                        </select>
+                    </label>
+                    <div class="ingredients__aside-item">
+                        <div class="ingredients__aside-add">Новый ингредиент</div>
+                    </div>
+                    <div class="ingredients__aside-item">
+                        <div class="ingredients__aside-add ingredients__aside-add_language">Добавить перевод</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <%- include('block/script') %>

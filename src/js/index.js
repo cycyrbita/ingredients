@@ -263,7 +263,7 @@ $(document).ready(function() {
             `
         });
 
-        $('.ingredients').append(card);
+        $('.ingredients__body').append(card);
 
         $('.owl-carousel').owlCarousel({
             items: 1,
@@ -274,4 +274,23 @@ $(document).ready(function() {
 
         readyCards();
     }
+
+
+
+
+
+
+
+
+    // логика под aside
+    $('.ingredients__aside-close').click(function() {
+        $('.ingredients__aside').toggleClass('open');
+    })
+
+    $(document).mouseup(function (e){
+		var elem = $('.ingredients__aside'); 
+		if (!elem.is(e.target) && elem.has(e.target).length === 0) {
+            elem.removeClass('open');
+		}
+	});
 });

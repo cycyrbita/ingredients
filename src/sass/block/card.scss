@@ -1,17 +1,4 @@
 
-.ingredients {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    input,
-    textarea {
-        &:focus {
-            outline: 1px solid #44bec1;
-        }
-    }
-}
-
 .card {
     flex: 0 0 auto;
     width: 25%;
